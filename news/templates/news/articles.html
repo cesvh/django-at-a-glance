@@ -3,8 +3,7 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-	<h1>{{ title }}</h1>
-	{% for reporter in reporters %}
-		<p>{{ reporter.full_name }}</p>
+	{% for article in articles %}
+		<p>{{ article.pub_date }} - {{ article.headline }}</p>
 	{% endfor %}
 {% endblock %}
